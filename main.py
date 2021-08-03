@@ -63,8 +63,8 @@ class PipOS:
         self.item_selected = False  # Enable on a menu so scrolling and button behavior affects the settings
         self.map_focus_coords = [0, 0]
         self.visible_map_region = self.map_image.get_region(self.map_focus_coords[0], self.map_focus_coords[1], 320, 320)
-        self.about_text = 'PIP-OS(R) V2.1.0.8\n\n' \
-                          'COPYRIGHT 2075 ROBCO(R)\n' \
+        self.about_text = 'PCI/OS v1.0\n\n' \
+                          'COPYRIGHT 2021 Squirrel Computers(R)\n' \
                           'LOADER V1.0\n' \
                           'EXEC VERSION 21.10'
         with open('us_constitution.txt', 'r') as self.raw_file:
@@ -337,7 +337,7 @@ def main():
 
     def get_time(pip_now):
 
-        pip_now = datetime.datetime.now().replace(year=2077)  # The year the bombs fall
+        pip_now = datetime.datetime.now()
         pipboy.datetime = pip_now.strftime('%H:%M | %m.%d.%Y')
         clock_label.text = pipboy.datetime
 
