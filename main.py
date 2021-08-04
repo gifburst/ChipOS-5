@@ -16,7 +16,7 @@ class PipOS:
         # TODO reduce instance variable count
         self.menu_names = [('SYSTEM', ['ABOUT', 'AUDIO', 'EXPANSION']),
                            ('STATUS', ['USER', 'ENVIRONMENT']),
-                           ('DATA', ['MAP', 'ARCHIVES'])]
+                           ('DATA', ['CHIPMAP', 'ARCHIVES'])]
         self.menu_names = OrderedDict(self.menu_names)  # The order matters for printing in the GUI
         self.font_name = 'monofonto'
         self.menu_label_text_size = 20
@@ -48,7 +48,7 @@ class PipOS:
         self.ui_colors = {'GREEN': (25, 255, 132, 255),
                           'AMBER': (215, 156, 41, 255),
                           'WHITE': (250, 250, 250, 255)}
-        self.active_ui_color = 'GREEN'
+        self.active_ui_color = 'WHITE'
         self.menu_sfx = pyglet.resource.media('ui_menu_mode.wav')
         self.tab_sfx = pyglet.resource.media('ui_menu_tab.wav')
         self.enter_sfx = pyglet.resource.media('ui_menu_ok.wav')
