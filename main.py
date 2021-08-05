@@ -14,8 +14,8 @@ class PipOS:
 
     def __init__(self):
         # TODO reduce instance variable count
-        self.menu_names = [('SYSTEM', ['ABOUT', 'AUDIO', 'EXPANSION']),
-                           ('STATUS', ['USER', 'ENVIRONMENT']),
+        self.menu_names = [('SYSTEM', ['ABOUT', 'EXPANSION']),
+                           ('STATUS', ['ENVIRONMENT']),
                            ('DATA', ['CHIPMAP', 'ARCHIVES'])]
         self.menu_names = OrderedDict(self.menu_names)  # The order matters for printing in the GUI
         self.font_name = 'monofonto'
@@ -63,7 +63,7 @@ class PipOS:
         self.item_selected = False  # Enable on a menu so scrolling and button behavior affects the settings
         self.map_focus_coords = [0, 0]
         self.visible_map_region = self.map_image.get_region(self.map_focus_coords[0], self.map_focus_coords[1], 320, 320)
-        self.about_text = 'PCI/OS v1.0\n\n' \
+        self.about_text = 'ChipOS v0.0.1 beta\n\n' \
                           'COPYRIGHT 2021 Squirrel Computers(R)\n' \
                           'LOADER V1.0\n' \
                           'EXEC VERSION 21.10'
