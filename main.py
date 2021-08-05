@@ -16,7 +16,7 @@ class PipOS:
         # TODO reduce instance variable count
         self.menu_names = [('SYSTEM', ['ABOUT', 'EXPANSION']),
                            ('STATUS', ['ENVIRONMENT']),
-                           ('DATA', ['CHIPMAP', 'ARCHIVES'])]
+                           ('DATA', ['CHIPMAPS', 'ARCHIVES'])]
         self.menu_names = OrderedDict(self.menu_names)  # The order matters for printing in the GUI
         self.font_name = 'monofonto'
         self.menu_label_text_size = 20
